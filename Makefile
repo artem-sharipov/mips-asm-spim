@@ -1,6 +1,6 @@
 SPIM := spim
 BASICS_DIR := basics
-EXAMPLE_PROGRAMS := minimal hello
+EXAMPLE_PROGRAMS := minimal hello procedure
 
 all:
 	@echo "Please specify the target (name of the example program)."
@@ -14,4 +14,7 @@ minimal:
 	@cd $(BASICS_DIR) && $(SPIM) -file $@.asm
 
 hello:
+	@cd $(BASICS_DIR) && $(SPIM) -file $@.asm
+
+procedure:
 	@cd $(BASICS_DIR) && $(SPIM) -file $@.asm
